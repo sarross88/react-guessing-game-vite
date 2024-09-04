@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import GuessControl from "./GuessControl";
 import GuessMessage from "./GuessMessage";
 import GameOver from "./GameOver";
@@ -12,7 +12,6 @@ function getRandomNumber() {
 }
 
 const MAX_ATTEMPTS = 5;
-
 
 function NumberGuessingGame() {
   const [numberToGuess, setNumberToGuess] = useState(getRandomNumber);
@@ -36,7 +35,7 @@ function NumberGuessingGame() {
 
   return (
     <div>
-      <h2>I'm thinking of a number from 1 to 100.</h2>
+      <h2>I am thinking of a number from 1 to 100.</h2>
       <h2>
         Can you guess the number I am thinking of in {MAX_ATTEMPTS} tries?
       </h2>
